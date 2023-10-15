@@ -1,4 +1,6 @@
 /* start varibles */
+
+
 :root {
     --main-col: #19c8fa;
     --second-col: rgba(15 116 143 / 70%);
@@ -18,7 +20,7 @@
 
 /* start global rules  */
 * {
-    margin: 0;
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -661,13 +663,40 @@ header .container nav ul li a.active {
 .achievement .text .box p {
     font-size: 14px;
 }
+.our-skills{
+    width: 100%;
+    }
+
 
 .our-skills .container{
     display: grid;
+    max-width: 100%;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     text-align: center;
-    gap: 50px;
+    gap: 30px;
     color: #000;
+}
+
+.our-skills .container .testmonails{ 
+    margin-left: 40px;
+}
+
+.our-skills .container .skills{ 
+    margin-left: 40px;
+}
+
+@media (max-width:767px){
+    .our-skills .container .testmonails{ 
+        margin-left: 0;
+    }
+
+    .our-skills .container .testmonails .bubbel{ 
+        margin-bottom: -40px;
+    }
+    
+    .our-skills .container .skills{ 
+        margin-left: 0;
+    }
 }
 
 .skills-header{
@@ -689,12 +718,20 @@ header .container nav ul li a.active {
 .testmonails{
     position: relative;
     min-height: 700px;
+    max-width: 100%;
+    width: 85%;
+
 }
 .testmonails .content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: var(--margin-lg);
+}
+
+.skills{
+    max-width: 100%;
+    width: 85%;
 }
 
 
@@ -760,11 +797,14 @@ header .container nav ul li a.active {
     flex-direction: column;
     text-align: start;
     justify-content: center;
+    max-width: 100%;
     margin-top: var(--margin-xl);
 }
 
 .lang-cont .lang{
     margin-bottom: var(--margin-lg);
+    width: 100%;
+
     text-transform: uppercase;
 }
 
