@@ -685,9 +685,9 @@ header .container nav ul li a.active {
     margin-left: 40px;
 }
 
-@media (max-width:767px){
+@media (max-width:600px){
     .our-skills .container .testmonails{ 
-        margin-left: 0;
+        margin-left: 40px;
     }
 
     .our-skills .container .testmonails .bubbel{ 
@@ -695,9 +695,43 @@ header .container nav ul li a.active {
     }
     
     .our-skills .container .skills{ 
-        margin-left: 0;
+        margin-left: 40px;
     }
 }
+
+@media (max-width:380px){
+    .our-skills .container .testmonails{ 
+        margin-left: -10px;
+    }
+
+    .our-skills .container .testmonails .bubbel{ 
+        margin-bottom: -40px;
+    }
+    
+    .our-skills .container .skills{ 
+        margin-left: -10px;
+    }
+}
+
+@media (max-width:290px){
+    .our-skills .container .testmonails{ 
+        margin-left: 10px;
+        max-width: 100%;
+        width: 50%;
+        font-size: 10px;
+    }
+
+    .our-skills .container .testmonails .bubbel{ 
+        margin-bottom: 0px;
+    }
+    
+    .our-skills .container .skills{ 
+        margin-left: 10px;
+        width: 50%;
+
+    }
+}
+
 
 .skills-header{
     margin-top: var(--margin-lg);
